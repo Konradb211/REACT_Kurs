@@ -1,20 +1,16 @@
 import "./App.css"
+import { Link } from "./components/Link"
+import { Text } from "./components/Text"
 
 function App() {
-	const paragraphElement = (
-		<>
-			<h2>Heading</h2>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
-				facere consectetur consequatur a perspiciatis beatae dolores maiores
-				officia in, vel, molestias, aliquam repellat itaque quam!
-			</p>
-		</>
-	)
 	return (
 		<>
-			{paragraphElement} {paragraphElement} {paragraphElement}{" "}
-			{paragraphElement} {paragraphElement} {paragraphElement}{" "}
+			<h1>Nasza strona!</h1>
+			<main>
+				<Link>Super strona numer: 1</Link>
+				<Text />
+				<Link>Super strona numer: 2</Link>
+			</main>
 		</>
 	)
 }
