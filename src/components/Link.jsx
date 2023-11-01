@@ -6,6 +6,7 @@ export const Link = ({ children }) => {
 				target='_blank'
 				rel='noopener noreferrer'>
 				{children}
+				{children}
 			</a>
 		</>
 	)
