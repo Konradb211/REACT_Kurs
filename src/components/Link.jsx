@@ -1,12 +1,10 @@
-export const Link = ({ children }) => {
+export const Link = ({ text, shouldOpenNewTab }) => {
+	const target = shouldOpenNewTab ? "_blank" : ""
+	const rel = shouldOpenNewTab ? "noopener noreferrer" : ""
 	return (
 		<>
-			<a
-				href='https://zrozumiecreact.pl'
-				target='_blank'
-				rel='noopener noreferrer'>
-				{children}
-				{children}
+			<a href='https://zrozumiecreact.pl' target={target} rel={rel}>
+				{text}
 			</a>
 		</>
 	)

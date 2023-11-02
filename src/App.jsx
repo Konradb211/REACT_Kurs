@@ -1,16 +1,23 @@
 import "./App.css"
-import { Link } from "./components/Link"
-import { Text } from "./components/Text"
+import { PersonInfo } from "./components/PersonInfo"
 
 function App() {
+	const jan = {
+		name: "Jan",
+		lastName: "Kowalski",
+		mail: "j.kow@gmail.com",
+		tel: "+48 888 000 111",
+	}
+	const janina = {
+		name: "Janina",
+		lastName: "Janinowksa",
+		mail: "janina.kow@gmail.com",
+		tel: "+48 666 000 111",
+	}
+
 	return (
 		<>
-			<h1>Nasza strona!</h1>
-			<main>
-				<Link>Super strona numer: 1</Link>
-				<Text />
-				<Link>Super strona numer: 2</Link>
-			</main>
+			<PersonInfo />
 		</>
 	)
 }
