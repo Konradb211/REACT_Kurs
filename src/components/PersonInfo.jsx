@@ -9,9 +9,11 @@ export const PersonInfo = ({ person }) => {
 			<div>
 				Email: <a href={`mailto:${person.mail}`}>{person.mail}</a>
 			</div>
-			<div>
-				Telefon: <a href={`tel: ${person.tel}`}>{person.tel}</a>
-			</div>
+			{person.tel && (
+				<div>
+					Telefon: <a href={`tel: ${person.tel}`}>{person.tel}</a>
+				</div>
+			)}
 		</address>
 	)
 }
